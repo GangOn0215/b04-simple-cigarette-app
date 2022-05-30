@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 // import cigarette_su from '../assets/img/cigarette/Esse_Su_01mg.jpg';
 import IMAGES from '../assets/index';
 
+import View from './View';
+import Option from './Option';
+
 const cigaretteData = [
   {
     id: 0,
@@ -535,28 +538,8 @@ const Cigarette = () => {
 
   return (
     <div className='cigarette'>
-      <div className='view-container'>
-        <div className='view-name'>
-          <img src={cigarette.img} alt={''} />
-          <span>{cigarette.name}</span>
-        </div>
-
-        <button onClick={randomCigarette}>돌리기</button>
-      </div>
-      <div className='option'>
-        <label>
-          <input type='checkbox' value={'hint-img'} />
-          hint-img
-        </label>
-        {typesArr.map((item, idx) => {
-          return (
-            <label key={idx}>
-              <input type='checkbox' name={item} onChange={handleDisableTypes} />
-              {item}
-            </label>
-          );
-        })}
-      </div>
+      <View cigarette={cigarette} randomCigarette={randomCigarette} />
+      <Option typesArr={typesArr} handleDisableTypes={handleDisableTypes} />
     </div>
   );
 };

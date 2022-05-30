@@ -1,8 +1,18 @@
 body {
 	margin: 0px;
 	background-color: white;
+	background-color: #f6f6f6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
 }
 
+#root {
+	background-color: #fff;
+	box-shadow: 0 7px 29px 0 rgb(100 100 111 / 20%);
+}
 .cigarette {
 	display: flex;
 	flex-direction: row;
@@ -44,6 +54,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	height: 400px;
+	width: 250px;
 	border: 1px solid gray;
 	padding: 10px;
 	box-sizing: border-box;
