@@ -1,177 +1,248 @@
 import React, { useState } from 'react';
+// import cigarette_su from '../assets/img/cigarette/Esse_Su_01mg.jpg';
+import IMAGES from '../assets/index';
 
 const cigaretteData = [
   {
     id: 0,
     type: '에쎄',
     alias: '체인지 1',
-    name: '에쎄체인지 1mg',
+    name: '에쎄 체인지 1mg',
+    name_en: 'Esse Change 1mg',
     contry: 'korea',
-    img: 'http://eocstore.com/web/product/big/201803/1070_shop2_238049.jpg',
+    img: IMAGES.esse.change_1mg,
     // 출시일 차후 date로 처리해야함
     releaseDate: '2013/06/05',
   },
   {
     id: 1,
     type: '에쎄',
-    name: '에쎄체인지 4mg',
+    name: '에쎄 체인지 4mg',
+    name_en: 'Esse Change 4mg',
+    img: IMAGES.esse.change_4mg,
     contry: 'korea',
-    img: 'http://eocstore.com/web/product/big/201803/1071_shop2_573525.jpg',
   },
   {
     id: 2,
     type: '에쎄',
-    name: '에쎄체인지 업',
+    name: '에쎄 체인지 업',
+    name_en: 'Esse Change UP',
     contry: 'korea',
-    img: 'http://eocstore.com/web/product/big/201803/1041_shop2_351289.jpg',
+    img: IMAGES.esse.change_up,
   },
   {
     id: 3,
     type: '에쎄',
-    name: '에쎄체인지 히말라야',
-    contry: 'korea',
-    img: 'https://tabacco.co.kr/web/product/big/20200224/0990a7b6abd446ab67e80988290bdc3d.jpg',
+    name: '에쎄 체인지 히말라야',
+    name_en: 'Esse Change Himalaya',
+    img: IMAGES.esse.change_himalaya,
   },
   {
     id: 4,
     type: '에쎄',
-    name: '에쎄체인지 린',
+    name: '에쎄 체인지 린',
+    name_en: 'Esse Change Linn',
     contry: 'korea',
-    img: 'https://tabacco.co.kr/web/product/big/201905/bb037568a800fdfe966edcbeabace5f6.jpg',
+    img: IMAGES.esse.change_linn,
   },
   {
     id: 5,
     type: '에쎄',
-    name: '에쎄체인지 빙',
+    name: '에쎄 체인지 빙',
+    name_en: 'Esse Change Bing',
     contry: 'korea',
-    img: 'http://eocstore.com/web/product/big/201803/1013_shop2_619676.jpg',
+    img: IMAGES.esse.change_bing,
   },
   {
     id: 6,
     type: '에쎄',
-    name: '에쎄체인지 더블유',
+    name: '에쎄 체인지 W',
+    name_en: 'Esse Change W',
     contry: 'korea',
-    img: 'http://eocstore.com/web/product/big/201803/1176_shop2_640524.jpg',
+    img: IMAGES.esse.change_w,
   },
   {
     id: 7,
     type: '에쎄',
-    name: '에쎄체인지 프로즌',
+    name: '에쎄 체인지 프로즌',
+    name_en: 'Esse_Change_Frozen',
     contry: 'korea',
-    img: 'http://www.goodmorningcc.com/news/photo/202005/232348_240788_4757.jpg',
+    img: IMAGES.esse.change_frozen,
   },
   {
     id: 8,
     type: '에쎄',
-    name: '에쎄체인지 시크릿',
+    name: '에쎄 체인지 시크릿',
+    name_en: 'Esse Change Secret',
     contry: 'korea',
+    img: IMAGES.esse.change_secret,
   },
   {
+    id: 9,
     type: '에쎄',
-    name: '에쎄체인지 더블',
+    name: '에쎄 체인지 더블',
+    name_en: 'Esse Change Double',
     contry: 'korea',
+    img: IMAGES.esse.change_double,
   },
   {
+    id: 10,
     type: '에쎄',
-    name: '에쎄체인지 그램',
+    name: '에쎄 체인지 그램',
+    name_en: 'Esse Change Gram',
     contry: 'korea',
+    img: IMAGES.esse.change_gram,
   },
   {
+    id: 11,
     type: '에쎄',
-    name: '에쎄체인지 로열 팰리스',
+    name: '에쎄 체인지 로열 팰리스',
+    name_en: 'Esse Royal Palace',
     contry: 'korea',
+    img: IMAGES.esse.royal_palace,
   },
   {
+    id: 12,
     type: '에쎄',
     name: '에쎄 골든 리프',
+    name_en: 'Esse Golden Leaf',
     contry: 'korea',
+    img: IMAGES.esse.golden_leaf,
   },
   {
+    id: 13,
     type: '에쎄',
     name: '에쎄 골든 리프 1',
+    name_en: 'Esse Golden Leaf 1mg',
     contry: 'korea',
+    img: IMAGES.esse.golden_leaf_1mg,
   },
   {
+    id: 14,
     type: '에쎄',
     name: '에쎄 스페셜 골드',
+    name_en: 'Esse Special Gold',
     contry: 'korea',
+    img: IMAGES.esse.special_gold,
   },
   {
+    id: 15,
     type: '에쎄',
     name: '에쎄 스페셜 골드 1',
+    name_en: 'Esse Special Gold 1mg',
     contry: 'korea',
+    img: IMAGES.esse.special_gold_1mg,
   },
   {
+    id: 16,
     type: '에쎄',
     name: '에쎄 스페셜 골드 0.5',
+    name_en: 'Esse Special Gold 0.5mg',
     contry: 'korea',
+    img: IMAGES.esse.special_gold_05mg,
   },
   {
+    id: 17,
     type: '에쎄',
     name: '에쎄 센스 1',
+    name_en: 'Esse Sense',
     contry: 'korea',
+    img: IMAGES.esse.sense,
   },
   {
+    id: 18,
     type: '에쎄',
     name: '에쎄 프라임',
+    name_en: 'Esse Prime',
     contry: 'korea',
+    img: IMAGES.esse.prime,
   },
   {
+    id: 19,
     type: '에쎄',
     name: '에쎄 원',
+    name_en: 'Esse One',
     contry: 'korea',
+    img: IMAGES.esse.one,
   },
   {
+    id: 20,
     type: '에쎄',
     name: '에쎄 클래식',
+    name_en: 'Esse Classic',
     contry: 'korea',
+    img: IMAGES.esse.classic,
   },
   {
+    id: 21,
     type: '에쎄',
     name: '에쎄 아이스',
+    name_en: 'Esse Ice',
     contry: 'korea',
+    img: IMAGES.esse.ice,
   },
   {
+    id: 22,
     type: '에쎄',
-    name: '에쎄 아이스 1',
+    name: '에쎄 아이스 1mg',
+    name_en: 'Esse Ice 1mg',
     contry: 'korea',
+    img: IMAGES.esse.ice_1mg,
   },
   {
+    id: 23,
     type: '에쎄',
     name: '에쎄 프레쏘',
+    name_en: 'Esse Presso',
     contry: 'korea',
+    img: IMAGES.esse.presso,
   },
   {
+    id: 24,
     type: '에쎄',
     name: '에쎄 수',
+    name_en: 'Esse Su',
     contry: 'korea',
+    img: IMAGES.esse.su,
   },
   {
+    id: 25,
     type: '에쎄',
-    name: '에쎄 수 0.5',
+    name: '에쎄 수 0.5mg',
+    name_en: 'Esse Su 0.5mg',
     contry: 'korea',
+    img: IMAGES.esse.su_05mg,
   },
   {
+    id: 26,
     type: '에쎄',
-    name: '에쎄 수 0.1',
+    name: '에쎄 수 0.1mg',
+    name_en: 'Esse Su 0.1mg',
     contry: 'korea',
+    img: IMAGES.esse.su_01mg,
   },
   {
+    id: 27,
     type: '에쎄',
-    name: '에쎄 엣지 1',
+    name: '에쎄 엣지 1mg',
+    name_en: 'Esse Edge 1mg',
     contry: 'korea',
+    img: IMAGES.esse.edge,
   },
   {
+    id: 28,
     type: '더원',
     name: '더원 스카이',
     contry: 'korea',
   },
   {
+    id: 29,
     type: '더원',
     name: '더원 블루',
     contry: 'korea',
   },
   {
+    id: 30,
     type: '더원',
     name: '더원 오렌지',
     contry: 'korea',
@@ -421,30 +492,20 @@ const typesArr = [
 ];
 
 const Cigarette = () => {
-  // 사용자가 돌리기 버튼을 눌렸을때 화면에 보여주기 위해 object 형태로 데이터를 받는 state
   const [cigarette, setCigarette] = useState(cigaretteData);
-
-  // 사용자가 외우기 위해 힌트를 조금씩 줍니다.
-  // 해당 힌트는 이미지를 보여주기 위함 false, true 입니다.
   const [isHintImg, setIsHintImg] = useState(false);
-
-  // 담배의 종류 (에쎄, 레종, 타임) 같은 것을 필터하기 위한 리스트 입니다.
   const [filterTypeList, setFilterTypeList] = useState([]);
 
-  // 힌트 toggle입니다.
   const onChange = () => setIsHintImg(!isHintImg);
 
-  // 담배를 랜덤으로 돌리기 위한 함수입니다.
+  // 담배 데이터들을 필터를 하여 filterTypeList(담배 종류 필터 리스트) 블랙리스트에 해당하지 않는 담배들을 담아 filteredCigaretteData 변수에 넣어줍니다.
   const randomCigarette = () => {
-    // 담배 데이터들을 필터를 하여 filterTypeList(담배 종류 필터 리스트) 블랙리스트에 해당하지 않는 담배들을 담아 filteredCigaretteData 변수에 넣어줍니다.
     const filteredCigaretteData = cigaretteData.filter((item) => {
       return !filterTypeList.includes(item.type);
     });
 
-    // 랜덤 idx를 지정합니다.
     const randomIDX = Math.floor(Math.random() * filteredCigaretteData.length - 1) + 1;
 
-    // filteredCigaretteData 배열에 랜덤 idx를 적용하여 cigarette에 넣어줍니다.
     setCigarette(filteredCigaretteData[randomIDX]);
     console.log(filteredCigaretteData[randomIDX]);
   };
@@ -459,33 +520,24 @@ const Cigarette = () => {
 
   // 제외할 담배 타입을 지정하는 함수 입니다.
   const handleDisableTypes = (e) => {
-    // 만약 체크가 된거라면
     if (e.target.checked) {
       console.log(`[ ${e.target.name} ] type 이 제외 되었습니다.`);
-
-      // e.target.name 의 이름을 확인 후 해당 담배 타입을 제외 시켜줍니다.
       insertFilter(e.target.name);
+
       return;
     }
 
     console.log(`[ ${e.target.name} ] type 이 제외 취소 되었습니다.`);
-
-    // e.target.name 의 이름을 확인 후 해당 담배 타입을 제외 취소 시켜줍니다.
     removeFilter(e.target.name);
+
     return;
   };
-  // const
 
   return (
     <div className='cigarette'>
       <div className='view-container'>
         <div className='view-name'>
-          {/* ? 이미지 */}
-          <img
-            src='https://cdn-icons.flaticon.com/png/512/2732/premium/2732700.png?token=exp=1653782588~hmac=af94552d745b95d52f2bfd498d0400d1'
-            alt=''
-          />
-          {/* <img src={cigarette.img} alt='' /> */}
+          <img src={cigarette.img} alt={''} />
           <span>{cigarette.name}</span>
         </div>
 
@@ -496,7 +548,6 @@ const Cigarette = () => {
           <input type='checkbox' value={'hint-img'} />
           hint-img
         </label>
-        {/* 담배 종류 를 checkbox 형태로 map을 이용하여 뿌려줍니다. */}
         {typesArr.map((item, idx) => {
           return (
             <label key={idx}>
