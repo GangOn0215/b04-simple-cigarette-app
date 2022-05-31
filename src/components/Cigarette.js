@@ -499,7 +499,7 @@ const Cigarette = () => {
   const [isHintImg, setIsHintImg] = useState(false);
   const [filterTypeList, setFilterTypeList] = useState([]);
 
-  const onChange = () => setIsHintImg(!isHintImg);
+  const toggleHintImg = () => setIsHintImg(!isHintImg);
 
   // 담배 데이터들을 필터를 하여 filterTypeList(담배 종류 필터 리스트) 블랙리스트에 해당하지 않는 담배들을 담아 filteredCigaretteData 변수에 넣어줍니다.
   const randomCigarette = () => {
@@ -538,8 +538,12 @@ const Cigarette = () => {
 
   return (
     <div className='cigarette'>
-      <View cigarette={cigarette} randomCigarette={randomCigarette} />
-      <Option typesArr={typesArr} handleDisableTypes={handleDisableTypes} />
+      <View cigarette={cigarette} isHintImg={isHintImg} randomCigarette={randomCigarette} />
+      <Option
+        typesArr={typesArr}
+        handleDisableTypes={handleDisableTypes}
+        toggleHintImg={toggleHintImg}
+      />
     </div>
   );
 };

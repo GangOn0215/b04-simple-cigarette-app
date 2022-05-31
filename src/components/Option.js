@@ -1,14 +1,13 @@
 import React from 'react';
 
-const Option = ({ typesArr, handleDisableTypes }) => {
+const Option = ({ typesArr, handleDisableTypes, toggleHintImg }) => {
   return (
     <div className='option'>
       <label>
-        <input type='checkbox' value={'hint-img'} />
+        <input type='checkbox' value={'hint-img'} onClick={toggleHintImg} />
         hint-img
       </label>
       <br />
-      {/* https://pngroyale.com/wp-content/uploads/2021/12/Download-free-Question-Mark-PNG-Free-Image-PNG.png */}
       {typesArr.map((item, idx) => {
         return (
           <label key={idx}>
