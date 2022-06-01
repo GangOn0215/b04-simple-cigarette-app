@@ -67,3 +67,7 @@ body {
 .cigarette .option input {
 	margin: 0px 3px 0px 0px;
 }
+
+.cigarette .option .black-list-types {
+	margin-bottom: 5px;
+}

@@ -10,7 +10,7 @@ const Option = ({ typesArr, handleDisableTypes, toggleHintImg }) => {
       <br />
       {typesArr.map((item, idx) => {
         return (
-          <label key={idx}>
+          <label className='black-list-types' key={idx}>
             <input type='checkbox' name={item} onChange={handleDisableTypes} />
             {item}
           </label>
