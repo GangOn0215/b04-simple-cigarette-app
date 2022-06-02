@@ -1,21 +1,24 @@
 import React from 'react';
 
-const Option = ({ typesArr, handleDisableTypes, toggleHintImg }) => {
+const Option = ({ typesArr, handleWhiteListTypes, toggleHintImg }) => {
   return (
     <div className='option'>
-      <label>
-        <input type='checkbox' value={'hint-img'} onClick={toggleHintImg} />
-        hint-img
-      </label>
-      <br />
-      {typesArr.map((item, idx) => {
-        return (
-          <label className='black-list-types' key={idx}>
-            <input type='checkbox' name={item} onChange={handleDisableTypes} />
-            {item}
-          </label>
-        );
-      })}
+      <div className='hint'>
+        <label>
+          <input type='checkbox' value={'hint-img'} onClick={toggleHintImg} />
+          hint-img
+        </label>
+      </div>
+      <div className='white-list'>
+        {typesArr.map((item, idx) => {
+          return (
+            <label className='white-list-types' key={idx}>
+              <input type='checkbox' name={item.name} onChange={handleWhiteListTypes} />
+              {item.name_kr}
+            </label>
+          );
+        })}
+      </div>
     </div>
   );
 };

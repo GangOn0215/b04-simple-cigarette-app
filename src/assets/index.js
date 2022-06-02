@@ -29,7 +29,14 @@ const IMAGES = {
     su_05mg: require('./img/cigarette/ESSE/Su_05mg.jpg'),
     edge: require('./img/cigarette/ESSE/Edge.jpg'),
   },
-  the_one: {},
+  the_one: {
+    blue: require('./img/cigarette/The_One/Blue.jpg'),
+    orange: require('./img/cigarette/The_One/Orange.jpg'),
+    white: require('./img/cigarette/The_One/White.jpg'),
+    change: require('./img/cigarette/The_One/Change.jpg'),
+    impact: require('./img/cigarette/The_One/Impact.jpg'),
+    sky: require('./img/cigarette/The_One/Sky.jpg'),
+  },
 };
 
 export default IMAGES;

@@ -23,12 +23,6 @@ body {
 	box-sizing: border-box;
 }
 
-.cigarette img {
-	width: 130px;
-	height: 240px;
-	margin-bottom: 10px;
-	object-fit: contain;
-}
 .cigarette button {
 	background-color: #eee;
 	border: 1px solid gray;
@@ -40,7 +34,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin-right: 20px;
-	height: 400px;
+	height: 500px;
 }
 .cigarette .view-container .view-name {
 	display: flex;
@@ -48,19 +42,29 @@ body {
 	justify-content: center;
 	align-items: center;
 	width: 250px;
-	height: 350px;
+	height: 450px;
 	padding: 20px;
 	margin-bottom: 10px;
 	border: 1px solid gray;
 	box-sizing: border-box;
 }
+.cigarette .view-container .view-name img {
+	width: 160px;
+	margin-bottom: 10px;
+	object-fit: contain;
+}
+.cigarette .view-container .view-name .img-box {
+	display: flex;
+	align-items: center;
+	height: 380px;
+}
 .cigarette .option {
 	display: flex;
 	flex-direction: column;
-	height: 400px;
+	height: 500px;
 	width: 250px;
-	border: 1px solid gray;
-	padding: 10px;
+	/* border: 1px solid gray; */
+	/* padding: 10px; */
 	box-sizing: border-box;
 }
 
@@ -68,6 +72,25 @@ body {
 	margin: 0px 3px 0px 0px;
 }
 
-.cigarette .option .black-list-types {
-	margin-bottom: 5px;
+.cigarette .option .white-list {
+	display: flex;
+	flex-direction: column;
+	/* margin-bottom: 5px; */
+}
+
+@media (max-width: 600px) {
+	body,
+	.cigarette {
+		height: auto;
+	}
+	.cigarette {
+		flex-direction: column;
+		padding: 20px 40px;
+	}
+	.cigarette .view-container {
+		margin-right: 0px;
+	}
+	.cigarette .view-container button {
+		margin-bottom: 10px;
+	}
 }

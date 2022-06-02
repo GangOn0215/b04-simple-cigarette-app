@@ -567,7 +567,7 @@ const Cigarette = () => {
   };
 
   // 추가할 담배 타입을 지정하는 함수 입니다.
-  const handleDisableTypes = (e) => {
+  const handleWhiteListTypes = (e) => {
     if (e.target.checked) {
       console.log(`[ ${e.target.name} ] type 추가 되었습니다.`);
       insertFilter(e.target.name);
@@ -586,7 +586,7 @@ const Cigarette = () => {
       <View cigarette={cigarette} isHintImg={isHintImg} randomCigarette={randomCigarette} />
       <Option
         typesArr={typesArr}
-        handleDisableTypes={handleDisableTypes}
+        handleWhiteListTypes={handleWhiteListTypes}
         toggleHintImg={toggleHintImg}
       />
     </div>

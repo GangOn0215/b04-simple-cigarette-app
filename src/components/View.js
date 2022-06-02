@@ -5,13 +5,15 @@ const View = ({ cigarette, isHintImg, randomCigarette }) => {
   return (
     <div className='view-container'>
       <div className='view-name'>
-        {isHintImg ? (
-          <img src={cigarette.img} alt={''} />
-        ) : (
-          <>
-            <img src={question_mark} alt='' />
-          </>
-        )}
+        <div className='img-box'>
+          {isHintImg ? (
+            <img src={cigarette.img} alt={''} />
+          ) : (
+            <>
+              <img src={question_mark} alt='' />
+            </>
+          )}
+        </div>
         <span>{cigarette.name}</span>
       </div>
 
