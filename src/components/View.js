@@ -20,4 +20,7 @@ const View = ({ cigarette, isHintImg, randomCigarette }) => {
   );
 };
 
+View.defaultProps = {
+  cigarette: { img: '', name: '' },
+};
 export default View;
