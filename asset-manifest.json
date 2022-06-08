@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/b04-simple-cigarette-app/static/css/main.72e3e390.css",
+    "main.css": "/b04-simple-cigarette-app/static/css/main.dd711985.css",
     "main.js": "/b04-simple-cigarette-app/static/js/main.37e46da2.js",
     "static/media/Change_Himalaya.png": "/b04-simple-cigarette-app/static/media/Change_Himalaya.e85cf4839a1eb0ca5dac.png",
     "static/media/No6.jpg": "/b04-simple-cigarette-app/static/media/No6.04014142a633723bf6cf.jpg",
@@ -76,12 +76,13 @@
     "static/media/Orange.jpg": "/b04-simple-cigarette-app/static/media/Orange.dd666c44672f43cfd5ae.jpg",
     "static/media/Sense.jpg": "/b04-simple-cigarette-app/static/media/Sense.394e5d3a51b1caa48b7a.jpg",
     "static/media/question_mark.png": "/b04-simple-cigarette-app/static/media/question_mark.3eec452d2b6bdfb42b31.png",
+    "static/media/bonobono.jpg": "/b04-simple-cigarette-app/static/media/bonobono.a4d2dd0f55af7ebe1b7a.jpg",
     "index.html": "/b04-simple-cigarette-app/index.html",
-    "main.72e3e390.css.map": "/b04-simple-cigarette-app/static/css/main.72e3e390.css.map",
+    "main.dd711985.css.map": "/b04-simple-cigarette-app/static/css/main.dd711985.css.map",
     "main.37e46da2.js.map": "/b04-simple-cigarette-app/static/js/main.37e46da2.js.map"
   },
   "entrypoints": [
-    "static/css/main.72e3e390.css",
+    "static/css/main.dd711985.css",
     "static/js/main.37e46da2.js"
   ]
 }
