@@ -1,7 +1,8 @@
 body {
 	margin: 0px;
-	background-color: white;
-	background-color: #f6f6f6;
+	background: url("./assets/img/bonobono.jpg");
+	background-size: contain;
+	/* background-color: #f6f6f6; */
 	display: flex;
 	justify-content: center;
 	align-items: center;

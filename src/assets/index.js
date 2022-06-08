@@ -3,6 +3,7 @@ const IMAGES = {
     change_1mg: require('./img/cigarette/ESSE/Change_1mg.jpg'),
     change_4mg: require('./img/cigarette/ESSE/Change_4mg.jpg'),
     change_up: require('./img/cigarette/ESSE/Change_Up.jpg'),
+    // 원본 이미지가 스캔으로 찍힌게 아니라 일반 카메라처럼 찍혀서 크기가 너무 많이 잡혀서 다시 찍어야 합니다.
     change_himalaya: require('./img/cigarette/ESSE/Change_Himalaya.png'),
     change_linn: require('./img/cigarette/ESSE/Change_Linn.jpg'),
     change_bing: require('./img/cigarette/ESSE/Change_Bing.jpg'),
@@ -94,7 +95,7 @@ const IMAGES = {
     hallasan: require('./img/cigarette/Empty/Hallasan.jpg'),
     icevolt_gt: require('./img/cigarette/Empty/Icevolt_GT.jpg'),
     lilac: require('./img/cigarette/Empty/Lilac.jpg'),
-    seasons: require('./img/cigarette/Empty/Seasons.jpg'),
+    seasons: require('./img/cigarette/Empty/Seasons.jpg')
   },
 };
 
