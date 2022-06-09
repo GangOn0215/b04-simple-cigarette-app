@@ -617,33 +617,11 @@ const typesArr = [
 ];
 
 const Cigarette = () => {
-  const [cigarette, setCigarette] = useState();
+  // 해당 showCigarette 은 view에서만 쓰이는것이기 때문에 해당 state는 cigarette component 가 아닌 child component인 view 에서 관리해줄것입니다.
   const [isHintImg, setIsHintImg] = useState(false);
   const [filterTypeList, setFilterTypeList] = useState([]);
 
   const toggleHintImg = () => setIsHintImg(!isHintImg);
-
-  // 담배 데이터들을 필터를 하여 filterTypeList(담배 종류 필터 리스트) 화이트리스트 담배들을 담아 filteredCigaretteData 변수에 넣어줍니다.
-  const randomCigarette = () => {
-    const cigaretteKeys = Object.keys(cigaretteOBJ);
-    const filteredCigaretteData = [];
-
-    // 차후에 for loop로 돌리는것이 아닌 insert delete로 처리할수있도록 할것입니다.
-    // 이유는 양이 많아질수록 느려지고 속도면에서 뒤쳐집니다.
-    cigaretteKeys.forEach((key, index) => {
-      if (filterTypeList.includes(key)) {
-        for (let i = 0; i < cigaretteOBJ[key].length; i++) {
-          filteredCigaretteData.push(cigaretteOBJ[key][i]);
-        }
-      }
-    });
-
-    const randomIDX = Math.floor(Math.random() * filteredCigaretteData.length - 1) + 1;
-
-    setCigarette(filteredCigaretteData[randomIDX]);
-    console.log(filteredCigaretteData[randomIDX]);
-    console.log(cigaretteOBJ);
-  };
 
   const insertFilter = (filterType) => {
     setFilterTypeList([...filterTypeList, filterType]);
@@ -670,7 +648,7 @@ const Cigarette = () => {
 
   return (
     <div className='cigarette'>
-      <View cigarette={cigarette} isHintImg={isHintImg} randomCigarette={randomCigarette} />
+      <View cigaretteOBJ={cigaretteOBJ} filterTypeList={filterTypeList} isHintImg={isHintImg} />
       <Option
         typesArr={typesArr}
         handleWhiteListTypes={handleWhiteListTypes}
