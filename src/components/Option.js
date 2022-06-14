@@ -1,33 +1,30 @@
 import React, { useState, useRef } from 'react';
 
-const Option = ({ typesArr, handleWhiteListTypes, toggleHintImg }) => {
+const Option = ({ typesArr, handleWhiteListTypes, toggleHintImg, toggleFilter }) => {
   const [dropdownCigaretteTypes, setDropdownCigaretteTypes] = useState(false);
+  const [allCheck, setAllCheck] = useState(false);
   const refWhiteLists = useRef([]);
 
   const toggleDropdown = () => setDropdownCigaretteTypes(!dropdownCigaretteTypes);
 
-  const allCheck = () => {
-    console.log(refWhiteLists);
+  const checkAllInput = () => {
+    const checked = !allCheck;
+    toggleFilter(allCheck);
 
-    function sleep(ms) {
-      const wakeUpTime = Date.now() + ms;
-      while (Date.now() < wakeUpTime) {}
+    for (let i = 0; i < 10; i++) {
+      refWhiteLists.current[i].children[0].checked = checked;
+      // refWhiteLists.current[i].children[0].click();
     }
 
-    for(let i = 0; i < 10; i++) {
-      refWhiteLists.current[i].children[0].click();
-      // sleep(100);
-    }
+    setAllCheck(!allCheck);
+  };
 
-
-  }
   const addToRefs = (e) => {
     // console.log(e)
-    if(refWhiteLists.current.length < 10){
+    if (refWhiteLists.current.length < 10) {
       refWhiteLists.current.push(e);
     }
-
-  }
+  };
 
   return (
     <div className='option'>
@@ -42,7 +39,7 @@ const Option = ({ typesArr, handleWhiteListTypes, toggleHintImg }) => {
       </div>
       <div className={`white-list ${dropdownCigaretteTypes ? 'show' : ''}`}>
         <label id='check-all' className='white-list-types'>
-          <input type="checkbox" onChange={allCheck} />
+          <input type='checkbox' onChange={checkAllInput} />
           전체 체크
         </label>
         {typesArr.map((item, idx) => {

@@ -631,6 +631,18 @@ const Cigarette = () => {
     setFilterTypeList(newFilterList);
   };
 
+  const toggleFilter = (allCheck) => {
+    if (allCheck) {
+      setFilterTypeList([]);
+      return;
+    }
+
+    const types = typesArr.map((item) => item.name);
+
+    setFilterTypeList(types);
+    return;
+  };
+
   // 추가할 담배 타입을 지정하는 함수 입니다.
   const handleWhiteListTypes = (e) => {
     if (e.target.checked) {
@@ -648,12 +660,16 @@ const Cigarette = () => {
 
   return (
     <div className='cigarette'>
-      <View cigaretteOBJ={cigaretteOBJ} filterTypeList={filterTypeList} isHintImg={isHintImg} />
-      <Option
-        typesArr={typesArr}
-        handleWhiteListTypes={handleWhiteListTypes}
-        toggleHintImg={toggleHintImg}
-      />
+      <header className='cigarette-header'></header>
+      <div className='cigarette-body'>
+        <View cigaretteOBJ={cigaretteOBJ} filterTypeList={filterTypeList} isHintImg={isHintImg} />
+        <Option
+          typesArr={typesArr}
+          handleWhiteListTypes={handleWhiteListTypes}
+          toggleHintImg={toggleHintImg}
+          toggleFilter={toggleFilter}
+        />
+      </div>
     </div>
   );
 };
