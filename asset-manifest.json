@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/b04-simple-cigarette-app/static/css/main.dd711985.css",
-    "main.js": "/b04-simple-cigarette-app/static/js/main.2c48f38e.js",
+    "main.css": "/b04-simple-cigarette-app/static/css/main.1e4b741f.css",
+    "main.js": "/b04-simple-cigarette-app/static/js/main.ba841107.js",
     "static/media/Change_Himalaya.png": "/b04-simple-cigarette-app/static/media/Change_Himalaya.ad6dfce7b313be2235c4.png",
     "static/media/No6.jpg": "/b04-simple-cigarette-app/static/media/No6.67b2f0c784c916d88bf0.jpg",
     "static/media/Icevolt_GT.jpg": "/b04-simple-cigarette-app/static/media/Icevolt_GT.1523cc659967267c3551.jpg",
@@ -78,11 +78,11 @@
     "static/media/Edge.jpg": "/b04-simple-cigarette-app/static/media/Edge.607d0ab7e91687fa8827.jpg",
     "static/media/bonobono.jpg": "/b04-simple-cigarette-app/static/media/bonobono.a4d2dd0f55af7ebe1b7a.jpg",
     "index.html": "/b04-simple-cigarette-app/index.html",
-    "main.dd711985.css.map": "/b04-simple-cigarette-app/static/css/main.dd711985.css.map",
-    "main.2c48f38e.js.map": "/b04-simple-cigarette-app/static/js/main.2c48f38e.js.map"
+    "main.1e4b741f.css.map": "/b04-simple-cigarette-app/static/css/main.1e4b741f.css.map",
+    "main.ba841107.js.map": "/b04-simple-cigarette-app/static/js/main.ba841107.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd711985.css",
-    "static/js/main.2c48f38e.js"
+    "static/css/main.1e4b741f.css",
+    "static/js/main.ba841107.js"
   ]
 }
