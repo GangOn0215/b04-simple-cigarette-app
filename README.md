@@ -25,9 +25,7 @@ body 부분을 기준으로 background-color 를 손보고 shadow 를 넣어 조
 
 담배 타입 리스트 dropdown 형식으로 만들어 버튼을 클릭했을때 보이고 다시 클릭했을때 닫히는걸 구현하였습니다.
 
-![version 0 3 0](https://user-images.githubusercontent.com/96044518/172545190-9b6fc134-0be3-4903-9a97-688e6153ea7a.PNG)
 ![version 0 3 1](https://user-images.githubusercontent.com/96044518/172545223-a1892cb4-ddcf-42d5-a770-6db5cf14429a.PNG)
-![version 0 3 2](https://user-images.githubusercontent.com/96044518/172545263-f2cec2eb-5c73-42cc-8184-ce26ec97503e.PNG)
-![version 0.3.3](https://user-images.githubusercontent.com/96044518/172545275-f97df3ac-a59b-4760-9780-d9d3ee9eb4c1.PNG)
+
 
 
