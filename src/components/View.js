@@ -9,6 +9,13 @@ const View = ({ cigaretteOBJ, filterTypeList, isHintImg }) => {
 
   // 담배 데이터들을 필터를 하여 filterTypeList(담배 종류 필터 리스트) 화이트리스트 담배들을 담아 filteredCigaretteData 변수에 넣어줍니다.
   const randomCigarette = () => {
+    if(filterTypeList.length === 0) {
+      setCigarette({
+        img: '',
+        name: '',
+      });
+      return;
+    }
     const cigaretteKeys = Object.keys(cigaretteOBJ);
     const filteredCigaretteData = [];
 
@@ -22,11 +29,14 @@ const View = ({ cigaretteOBJ, filterTypeList, isHintImg }) => {
       }
     });
 
+    console.log(filterTypeList.length);
+
     const randomIDX = Math.floor(Math.random() * filteredCigaretteData.length - 1) + 1;
 
     setCigarette(filteredCigaretteData[randomIDX]);
     console.log(filteredCigaretteData[randomIDX]);
     console.log(cigaretteOBJ);
+    console.log(cigarette.name)
   };
 
   return (
@@ -49,7 +59,4 @@ const View = ({ cigaretteOBJ, filterTypeList, isHintImg }) => {
   );
 };
 
-View.defaultProps = {
-  cigarette: { img: '', name: '' },
-};
 export default View;
