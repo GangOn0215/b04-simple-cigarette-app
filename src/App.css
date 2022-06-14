@@ -14,16 +14,20 @@ body {
 	background-color: #fff;
 	box-shadow: 0 7px 29px 0 rgb(100 100 111 / 20%);
 }
-.cigarette {
+.cigarette-header {
+	height: 100px;
+}
+.cigarette-body {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	align-items: center;
+	/* align-items: center; */
 	height: 100vh;
 	padding: 20px 100px;
 	box-sizing: border-box;
+	box-shadow: 4px 20px 20px grey;
 }
-.cigarette button {
+.cigarette-body button {
 	background-color: #eee;
 	border: 1px solid gray;
 	padding: 10px 20px;
@@ -32,13 +36,13 @@ body {
 }
 
 /* view container */
-.cigarette .view-container {
+.cigarette-body .view-container {
 	display: flex;
 	flex-direction: column;
 	margin-right: 20px;
 	height: 500px;
 }
-.cigarette .view-container .view-name {
+.cigarette-body .view-container .view-name {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -50,32 +54,32 @@ body {
 	border: 1px solid gray;
 	box-sizing: border-box;
 }
-.cigarette .view-container .view-name img {
+.cigarette-body .view-container .view-name img {
 	width: 160px;
 	margin-bottom: 10px;
 	object-fit: contain;
 }
-.cigarette .view-container .view-name .img-box {
+.cigarette-body .view-container .view-name .img-box {
 	display: flex;
 	align-items: center;
 	height: 380px;
 }
 
 /* option */
-.cigarette .option {
-	height: 500px;
+.cigarette-body .option {
+	height: auto;
 	width: 250px;
 	box-sizing: border-box;
 }
-.cigarette .option input {
+.cigarette-body .option input {
 	margin: 0px 3px 0px 0px;
 }
-.cigarette .option .hint {
+.cigarette-body .option .hint {
 	padding: 10px;
 	border: 1px solid gray;
 	margin-bottom: 10px;
 }
-.cigarette .option .white-list {
+.cigarette-body .option .white-list {
 	visibility: hidden;
 	display: flex;
 	flex-direction: column;
@@ -83,31 +87,31 @@ body {
 	border-top: none;
 	height: auto;
 }
-.cigarette .option .white-list.show {
+.cigarette-body .option .white-list.show {
 	visibility: visible;
 	height: auto;
 }
-.cigarette .option .white-list-types {
+.cigarette-body .option .white-list-types {
 	border-bottom: 1px solid #eee;
 	padding: 10px;
 }
 
 @media (max-width: 800px) {
 	body,
-	.cigarette {
+	.cigarette-body {
 		height: auto;
 	}
-	.cigarette {
+	.cigarette-body {
 		flex-direction: column;
 		padding: 20px 40px;
 	}
-	.cigarette .view-container {
+	.cigarette-body .view-container {
 		margin-right: 0px;
 	}
-	.cigarette .view-container button {
+	.cigarette-body .view-container button {
 		margin-bottom: 10px;
 	}
-	.cigarette .option .hint {
+	.cigarette-body .option .hint {
 		margin-top: 20px;
 	}
 }
