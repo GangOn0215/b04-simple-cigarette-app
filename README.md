@@ -7,5 +7,6 @@ github release 기능을 이용하여 version 으로 나눠 설명해두었습�
 현재 version 1.1.0 이 최신 버전 입니다.
 
 ### release site
-https://gangon0215.github.io/b04-simple-cigarette-app/ <br /> <br />
+https://gangon0215.github.io/b04-simple-cigarette-app
+<br /> <br />
 ![version 1.2.0](https://user-images.githubusercontent.com/96044518/173758461-daeb47de-8392-4f9b-9ba2-e2bd317805f1.png)
