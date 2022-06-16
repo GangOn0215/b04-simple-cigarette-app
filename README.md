@@ -6,6 +6,9 @@ React 를 3~4월쯤 배웠고 완강을 했었는데 1달 조금 지난 지금 �
 github release 기능을 이용하여 version 으로 나눠 설명해두었습니다.
 현재 version 1.1.0 이 최신 버전 입니다.
 
+### github release information
+https://github.com/GangOn0215/b04-simple-cigarette-app/releases
+
 ### release site
 https://gangon0215.github.io/b04-simple-cigarette-app
 <br /> <br />
